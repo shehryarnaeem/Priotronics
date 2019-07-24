@@ -90,7 +90,7 @@
     });
     //    category heading
     $('.category-heading, .category-menu_icon').on('click', function() {
-        $('.category-menu-list').slideToggle(900);
+        $('.category-menu-list').toggle();
     });
     /*-- Category Menu Toggles --*/
     function categorySubMenuToggle() {
