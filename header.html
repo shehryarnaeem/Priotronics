@@ -145,6 +145,50 @@ h3::after {
 .carousel-indicators li.active {    
     background: rgba(0, 0, 0, 0.6);
 }
+        
+        .topnav {
+  overflow: hidden;
+
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.active {
+
+  color: white;
+}
+
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media only screen and (min-width : 700px)
+{
+    .topnav{
+        display: none !important;
+
+    }
+}
+
+
 
     </style>
 </head>
@@ -400,9 +444,21 @@ h3::after {
                                 </ul>
                             </div>
                             <!-- Begin JB's Offcanvas Area -->
-                            <a href="#" class="menu-btn color--white">
-                                <i class="fa fa-bars"></i>
-                            </a>
+                           <div class="topnav">
+  <a class="active" style="height:50px"></a>
+  <div id="myLinks">
+    <a href="#news">Login</a>
+    <a href="#contact">Register</a>
+    <a href="#about">About</a>
+    <a href="#contact>Contact Us </a>
+              
+
+  </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
                             <!-- JB's Offcanvas Area End Here -->
                         </div>
                         <!-- Header Middle Minicart Area End Here -->
@@ -518,46 +574,7 @@ h3::after {
             </div>
             <!-- Header Bottom Area End Here -->
             <!-- Begin JB's Offcanvas Area -->
-            <div class="offcanvas-menu-wrapper" id="offcanvasMenu">
-                <div class="offcanvas-menu-inner">
-                    <div class="container">
-                        <a href="#" class="btn-close"><i class="fa fa-times"></i></a>
-                        <!-- Begin Offcanvas Search Area -->
-                        <div class="offcanvas-search">
-                            <form action="#" class="hm-searchbox">
-                                <input type="text" placeholder="Search for item...">
-                                <button class="search_btn" type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-                        <!-- Offcanvas Search Area End Here -->
-                        <!-- Begin Offcanvas Navigation Area -->
-                       
-                        <!-- Offcanvas Navigation Area End Here -->
-                        <!-- Begin Header Top Offcanvas Navigation Area -->
-                        <nav class="offcanvas-navigation ht-offcanvas_navigation">
-                            <ul class="offcanvas-menu">
-                                <li class="menu-item-has-children active"><a href="javascript:void(0)"><span
-                                            class="mm-text">User Setting</span></a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="my-account.html">
-                                                <span class="mm-text">My Account</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="login-register.html">
-                                                <span class="mm-text">Login | Register</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                               
-                              
-                            </ul>
-                        </nav>
-                        <!-- Header Top Offcanvas Navigation Area End Here -->
-                    </div>
-                </div>
-            </div>
+          
+          
             <!-- JB's Offcanvas Area End Here -->
         </header>
