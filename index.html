@@ -851,6 +851,50 @@ h3::after {
                     </div>
                 </div>
             </div>
+         
+           <script type="text/javascript">
+        $('.jb-brand_slider').slick({
+        infinite: true,
+        arrows: false,
+        dots: false,
+        speed: 2000,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        prevArrow: '<button class="slick-prev"><i class="fa fa-caret-left"></i></button>',
+        nextArrow: '<button class="slick-next"><i class="fa fa-caret-right"></i></button>',
+        responsive: [{
+                breakpoint: 1501,
+                settings: {
+                    slidesToShow: 6
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
+    </script>
             <!-- JB's Footer Top Area End Here -->
             <!-- Begin JB's Footer Middle Area -->
         
