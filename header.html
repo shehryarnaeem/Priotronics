@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/plugins.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
     <style type="text/css">
     h3{
@@ -188,6 +191,18 @@ h3::after {
 
     }
 }
+        
+@media only screen and (min-width : 768px)
+{
+    .shortmenu
+    {
+        display: none !important;
+        visibility: hidden !important; 
+
+    }
+
+}
+              
         
 
 
@@ -447,24 +462,7 @@ h3::after {
                                 </ul>
                             </div>
                             <!-- Begin JB's Offcanvas Area -->
-                             <div class="topnav">
-  <a class="active" style="height:50px"></a>
-  <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-
-  </div>
-
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-                            <!-- JB's Offcanvas Area End Here -->
-                        </div>
-                        <!-- Header Middle Minicart Area End Here -->
-                    </div>
-                </div>
+                            
             </div>
             <!-- Header Middle Area End Here -->
             <!-- Begin Header Bottom Area -->
@@ -573,14 +571,74 @@ h3::after {
                     </div>
                 </div>
             </div>
-                
-  <script type="text/javascript">
-        
+                            
+   <div class="container" style="background-color: #0084c5;margin: 8px"  >
 
-        $( "#searchbutton" ).click(function() {
-    $( "#searchbar" ).toggle();
-});
-    </script>
+      <center><div class="row shortmenu" style="margin-bottom: 30px">
+
+          <div class="col" style="margin-top: 5px">
+            <div class="row" > 
+              <span class="fa fa-shopping-basket fa-3x text-center"> </span>
+            </div>
+            <div class="row">
+                   <a  style="margin: 5px;color: black" href="contact.html">Shop</a>
+            </div>
+            </div>
+
+          <div class="col" style="margin-top: 5px">   
+            <div class="row"> 
+              <span class="fa fa-user fa-3x text-center"> </span>
+            </div>
+            <div class="row">
+              <a  style="margin: 5px;color: black" href="login-register.html">Account</a>
+            </div>
+           </div>
+
+         <div class="col" style="margin-top: 5px;color: black">   
+            <div class="row"> 
+              <span id="searchbutton" class="fa fa-search fa-3x text-center"> </span>
+            </div>
+            <div class="row">
+                 <a  style="margin: 5px;color: black"  href="#">Search</a>
+                 <form action="#" id="searchbar" id="searchbutton" style="display:none;margin-bottom: 20px;margin-left: -60px;margin-top:50px;position: absolute;">
+                     <input type="text" style="border-radius: 8px" name="search">
+                     <input type="submit" class="btn btn-primary" value="Search">
+                 </form>
+            </div>
+           </div>
+
+
+        <div class="col" style="margin-top: 5px">   
+            <div class="row"> 
+              <span class="fa fa-location-arrow fa-3x text-center"> </span>
+            </div>
+            <div class="row">
+                  <a  style="margin: 5px;color: black"  href="contact.html">Contact Us</a>
+            </div>
+        </div>
+          <div class="col" style="margin-top: 5px">   
+            <div class="row"> 
+                  <span class="fa fa-shopping-cart fa-3x text-center"> </span>
+                        <span style="color: black" class="item-count">2</span>
+             </div>
+             <div class="row">
+               
+                                            
+
+                 <a style="margin: 5px;color: black" href="cart.html"><span style="color: black">$54.90</span><br>My Cart
+                 </a>                           
+</div>
+</div>
+
+              
+           
+        </div>
+      </center>
+  </div>                         
+                            
+                            
+                
+ 
             <!-- Header Bottom Area End Here -->
             <!-- Begin JB's Offcanvas Area -->
           
