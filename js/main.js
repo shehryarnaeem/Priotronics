@@ -8,6 +8,12 @@ function myFunction() {
   }
 }
 
+        
+
+        $( "#searchbutton" ).click(function() {
+    $( "#searchbar" ).toggle();
+});
+  
     
 
 
